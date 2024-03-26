@@ -1,0 +1,65 @@
+.add_employee{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(241, 241, 241, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.add_employee_header{
+    background-color: #607AFB;
+    width: 900px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 20px 40px;
+    color: #fff;
+}
+
+.add_employee_title{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -2.5%;
+}
+
+.add_employee_text{
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 2px;
+}
+
+.add_employee_wrapper{
+    background-color: #fff;
+    width: 900px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 30px 40px;
+}
+
+.add_employee_form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.add_employee_form_group{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.add_employee_input{
+   background-color: #F9F8FA;
+   border:none; 
+   padding: 16px;
+   border-radius: 8px;
+   outline-color: rgb(161, 158, 158);
+}
+
+
+
