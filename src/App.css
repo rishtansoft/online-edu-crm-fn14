@@ -12,7 +12,7 @@
   height: 105px;
   /*border: 1px solid rgba(0, 102, 255, 0.466);*/
   margin-top: 20px;
-  margin-left: 30px;
+  margin-left: 0px;
   border-radius: 20px;
 }
 
@@ -206,4 +206,9 @@ h6 {
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
+}
+.icon{
+  display: flex;
+  margin-top: 25px;
+  margin-left: 35px;
 }
