@@ -30,7 +30,49 @@ function AddEmployee() {
                     <label className={styles.add_employee_label} htmlFor="dateOfBirth">Tug‘ilgan sanasi</label>
                     <input className={styles.add_employee_input} type="date" id="dateOfBirth"/>
                 </div>
+                <div className={styles.add_employee_form_group}>
+                    <label className={styles.add_employee_label} htmlFor="gender">Jinsi</label>
+                    <select className={styles.add_employee_input} id="gender">
+                        <option value="" disabled selected hidden>Jinsini tanlang</option>
+                        <option value="male">Erkak</option>
+                        <option value="female">Ayol</option>
+                    </select>
+                </div>
+                <div className={styles.add_employee_form_group}>
+                    <label className={styles.add_employee_label} htmlFor="phone">Xodim tel raqami</label>
+                    <input className={styles.add_employee_input} type="tel" id="phone" placeholder="+998" />
+                </div>
+                <div className={styles.add_employee_form_group}>
+                    <label className={styles.add_employee_label} htmlFor="phone2">Qo‘shimcha tel raqam</label>
+                    <input className={styles.add_employee_input} type="tel" id="phone2" placeholder="+998" />
+                </div>
+                <div className={styles.add_employee_form_group}>
+                    <label className={styles.add_employee_label} htmlFor="telegram">Telegram ID</label>
+                    <input className={styles.add_employee_input} type="text" id="telegram" placeholder="@username" />
+                </div>
+                <div className={styles.add_employee_form_group}>
+                    <label className={styles.add_employee_label} htmlFor="role">Xodim vazifasi</label>
+                    <select className={styles.add_employee_input} id="role">
+                        <option value="" disabled selected hidden>Xodim vazifasini tanlang</option>
+                        <option value="CEO">Bosh direktor (CEO)</option>
+                        <option value="admin">Administrator</option>
+                        <option value="accountant">Hisobchi</option>
+                        <option value="teacher">O‘qituvchi</option>
+                    </select>
+                </div>
+                <div className={styles.add_employee_form_group}>
+                    <label className={styles.add_employee_label} htmlFor="login">Xodim logini</label>
+                    <input className={styles.add_employee_input} type="text" id="login" placeholder="ceo_1" />
+                </div>
+                <div className={styles.add_employee_form_group}>
+                    <label className={styles.add_employee_label} htmlFor="password">Paroli</label>
+                    <input className={styles.add_employee_input} type="password" id="password" placeholder="******" />
+                </div>
             </form>
+            <div className={styles.addBtn}>
+            <button className={styles.btn}>Qo‘shish</button>
+            </div>
+            
          </div>
     </div>
   )

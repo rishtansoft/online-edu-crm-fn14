@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
     display: none;
 }
 
@@ -49,6 +50,7 @@
     border-radius: 8px;
     padding: 5px 40px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .modal_actions button:first-child {
