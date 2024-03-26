@@ -5,7 +5,7 @@ import styles from "./index.module.css";
 function Video() {
     const [isHomework, setIsHomework] = useState(true);
     const [videoData, setVideoData] = useState(null);
-    const [error, setError] = useState(null);
+    // const [error, setError] = useState(null);
 
     function handleHomework() {
         setIsHomework(true);
