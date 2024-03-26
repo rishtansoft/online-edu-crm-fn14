@@ -1,64 +1,209 @@
-body{
-  max-width: 1350px;  /* Adjust the max-width as needed */
-  padding: 20px;      /* Add padding */
-  background-color: #f5f5f5; /* Set background color */
-
+.head{
+  max-width: 1350px;
+  min-width: 750px;
+  margin: 0 auto;
 }
-.container{
+.container {
   display: flex;
 }
 
-.Tech_Panel{
-  width: 180px;
-  height: 175px;
+.Tech_Panel {
+  width: 205px;
+  height: 105px;
   /*border: 1px solid rgba(0, 102, 255, 0.466);*/
-  background-color: #607AFB;
   margin-top: 20px;
   margin-left: 30px;
   border-radius: 20px;
-  box-shadow: 0 0 15px rgba(78, 78, 78, 0.61);
 }
 
-.Tech_Logo{
-  width: 70px;
-  height: 70px;
-  border-radius: 50px;
-  display: flex;
-  margin-left: 40px;
-  margin-top: 15px;
-}
-.tech{
-  padding-top: 20px;
-  padding-left: 15px;
-  color: white;
-  display: flex;
-}
-.Techer{
-  color: white;
+
+.Techer {
+  color: #252525;
+  font-weight: 800;
+  font-size: 20px;
   padding-left: 15px;
 }
-.Soxa{
-  color: white;
+
+.Soxa {
+  color: #4B4B4B;
   padding-left: 15px;
-  padding-top: 5px; 
+  padding-top: 2px;
+  font-size: 16px;
 }
-.Soxa_icon{
+
+.Soxa_icon {
   margin-left: 5px;
 }
-.exit{
-  margin-top: 25px;
-  margin-left: 1030px;
+
+.exit {
+  margin-top: 15px;
+ /* margin-left: 1050px;*/
 }
-.btn_exit{
-  width: 100px;
+
+.btn_exit {
+  width: 50px;
   height: 50px;
   font-size: 20px;
   border: none;
-  background-color: #607AFB;
-  color: white;
-  border-radius: 10px;
+  background-color: #fff;
+  border-radius: 50px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.btn_exit:active{
-  background-color: #5771f7;
+
+
+.main {
+  border: 1px solid #F0F0F0;
+  border-radius: 15px;
+  width: 1250px;
+  height: 580px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+h6 {
+  font-size: 22px;
+  color: #252525;
+  padding-left: 20px;
+  margin: 10px;
+}
+
+.form{
+  display: flex;
+  border-bottom: 1px solid #F0F0F0;
+  background-color: #F9F8FA;
+}
+.id{
+  font-size: 14px;
+  font-family: inter;
+  line-height: 14px;
+  font-weight: 400;
+  margin-top: 18px;
+}
+.bottom{
+  margin-top: 15px;
+  margin-right: 500px;
+}
+.grop{
+  font-family: inter;
+  font-weight: 500;
+  line-height: 14px;
+  font-size: 16px;
+  color: #4B4B4B;
+  margin-top: 18px;
+  margin-right: 400px;
+}
+.children{
+  font-family: inter;
+  font-weight: 500;
+  line-height: 14px;
+  font-size: 16px;
+  color: #4B4B4B;
+  margin-top: 18px;
+}
+.form_panel{
+  display: flex;
+  border-bottom: 1px solid #F0F0F0;
+  height: 50px;
+}
+.idd{
+  margin-top: 15px;
+  margin-right: 540px;
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.idd_3{
+  margin-top: 15px;
+  margin-right: 540px;
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.idd_4{
+  margin-top: 15px;
+  margin-right: 540px;
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.idd_6{
+  margin-top: 15px;
+  margin-right: 540px;
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.grup{
+  margin-top: 15px;
+  margin-right: 450px;
+  font-weight: 500;
+  color: #0B38E1;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.grup_3{
+  margin-top: 15px;
+  margin-right: 445px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #0B38E1;
+
+}
+
+.grup_4{
+  margin-top: 15px;
+  margin-right: 445px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #0B38E1;
+
+}
+
+.grup_6{
+  margin-top: 15px;
+  margin-right: 445px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #0B38E1;
+
+}
+
+.people{
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.people_3{
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.people_4{
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.people_6{
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
 }
