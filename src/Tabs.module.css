@@ -1,0 +1,123 @@
+.StudentWrapper {
+  width: 100%;
+  max-width: 1419px;
+  margin: 0 auto;
+}
+
+table,
+td,
+th {
+  border-bottom: 1px solid lightgray;
+  border-collapse: collapse;
+  padding: 15px 10px;
+  text-align: center;
+}
+
+.rounded-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+.thead {
+  background-color: #f9f8fa;
+  color: #4b4b4b;
+}
+
+.student-title {
+  width: 100%;
+  background-color: #607afb;
+  padding: 30px 20px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.tab-buttons button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 10px;
+  margin-top: 40px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.tab-buttons button.active {
+  border-bottom: 3px solid #607afb;
+  color: #607afb;
+}
+
+.student-id a {
+  text-decoration: none;
+  color: #607afb;
+  transition: all 0.2s ease-out;
+}
+
+.student-id a:hover {
+  color: #f716a8;
+}
+
+.active {
+  background-color: #55ce63;
+  color: #f9f8fa;
+  font-weight: 500;
+  border-radius: 8px;
+  width: 100px;
+}
+
+.inactive {
+  background-color: rgba(255, 0, 0, 0.512);
+  color: white;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.lesson-charts {
+  border: 1px solid lightgray;
+  width: 100%;
+  text-align: center;
+  color: #4b4b4b;
+}
+
+.lesson-charts .lesson-thead {
+  background-color: #f9f8fa;
+}
+
+.lesson-title {
+  width: 100%;
+  background-color: #607afb;
+  padding: 30px 20px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.lesson-start {
+  display: block;
+  background-color: #607afb;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  margin-left: auto;
+  margin-bottom: 10px;
+  transition: all 0.2s ease-out;
+}
+
+.lesson-start:hover {
+  background-color: #1b39cd;
+}
+
+.lesson-link a {
+  text-decoration: none;
+  color: #607afb;
+  transition: all 0.2s ease-out;
+}
+
+.lesson-link a:hover {
+  color: #f716a8;
+}
