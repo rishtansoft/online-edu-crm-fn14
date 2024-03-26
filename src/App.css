@@ -1,42 +1,64 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body{
+  max-width: 1350px;  /* Adjust the max-width as needed */
+  padding: 20px;      /* Add padding */
+  background-color: #f5f5f5; /* Set background color */
+
+}
+.container{
+  display: flex;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.Tech_Panel{
+  width: 180px;
+  height: 175px;
+  /*border: 1px solid rgba(0, 102, 255, 0.466);*/
+  background-color: #607AFB;
+  margin-top: 20px;
+  margin-left: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(78, 78, 78, 0.61);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Tech_Logo{
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  display: flex;
+  margin-left: 40px;
+  margin-top: 15px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.tech{
+  padding-top: 20px;
+  padding-left: 15px;
+  color: white;
+  display: flex;
 }
-
-.card {
-  padding: 2em;
+.Techer{
+  color: white;
+  padding-left: 15px;
 }
-
-.read-the-docs {
-  color: #888;
+.Soxa{
+  color: white;
+  padding-left: 15px;
+  padding-top: 5px; 
+}
+.Soxa_icon{
+  margin-left: 5px;
+}
+.exit{
+  margin-top: 25px;
+  margin-left: 1030px;
+}
+.btn_exit{
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  background-color: #607AFB;
+  color: white;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btn_exit:active{
+  background-color: #5771f7;
 }
