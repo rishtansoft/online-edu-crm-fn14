@@ -1,42 +1,187 @@
-#root {
-  max-width: 1280px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: linear-gradient(to left, rgba(208, 211, 7), rgba(45, 255, 76, 0.5));
+}
+
+.container {
+  display: flex;
+  background: rgb(255, 255, 255);
+  width: 1380px;
+  height: 648px;
   margin: 0 auto;
-  padding: 2rem;
+}
+
+.sidebar {
+  width: 320px;
+  background: white;
+  padding: 30px 0px 20px 0px;
+  border-right: 1px solid gray;
+}
+
+.sidebar-img {
+  width: 111px;
+  height: 40px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 50px;
+}
+
+.sidebar a {
+  width: 230px;
+  font-size: 20px;
+  color: gray;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.sidebar a:hover {
+  background: #ECEFFF;
+}
+.sidebar-icon {
+  margin-right: 10px;
+}
+.active {
+  background: #ECEFFF;
+  color: blue !important;
+}
+.header {
+  position: relative;
+}
+.header-role {
+  width: 1060px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 14px;
+  border-bottom: 1px solid gray;
+}
+.header-role h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+.header-role span {
+  font-size: 12px;
+  font-weight: 300;
+}
+.invited {
+  display: flex;
+  gap: 30px;
+}
+form {
+  display: flex;
+  align-items: center;
+}
+.sidebar-input {
+  width: 400px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid gray;
+}
+.sidebar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgb(85, 85, 253);
+  color: white;
+  font-size: 20px;
+  border: none;
+  margin-left: -36px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-button:hover {
+  transform: translateY(-4px);
+}
+.head-icons {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-left: 20px;
+}
+.head-icon {
+  border-radius: 50%;
+  background: rgb(85, 85, 253);
+  color: white;
+  border: none;
+}
+.dialog-overlay {
+  position: absolute;
+  top: 130px;
+  left: -30px;
+  width: 800px;
+  padding: 50px;
+  background: linear-gradient(to left, white, rgb(126, 126, 255));
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  z-index: 9999;
+}
+.dialog-overlay form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.dialog-overlay input {
+  color: blue;
+  width: 300px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  outline: none;
+  border: 2px solid blue;
+}
+.dialog-overlay h2 {
   text-align: center;
+  margin-bottom: 20px;
+}
+.dialog-overlay button {
+  width: 100px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background: rgb(85, 85, 253);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.dialog-overlay button:hover {
+  transform: translateY(-4px);
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 1);
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.dialog-btn {
+  display: flex;
+  align-items: center;
+  gap: 90px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.components {
+  padding: 50px;
 }
