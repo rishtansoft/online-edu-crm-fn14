@@ -19,8 +19,8 @@ function Lesson() {
                         <th>Amallar</th>
                     </tr>
                     <tr>
-                        <td><NavLink to="/videoPage">7-dars videosi</NavLink></td>
-                        <td>7-dars</td>
+                        <td><NavLink to="/videoPage">1-dars videosi</NavLink></td>
+                        <td>1-dars</td>
                         <td>20 mart, 2024</td>
                         <td>423 mb</td>
                         <td className={styles.actions}>
@@ -29,8 +29,8 @@ function Lesson() {
                         </td>
                     </tr>
                     <tr>
-                        <td><NavLink to="/videoPage">7-dars videosi</NavLink></td>
-                        <td>7-dars</td>
+                        <td><NavLink to="/videoPage">2-dars videosi</NavLink></td>
+                        <td>2-dars</td>
                         <td>20 mart, 2024</td>
                         <td>423 mb</td>
                         <td className={styles.actions}>
@@ -39,8 +39,8 @@ function Lesson() {
                         </td>
                     </tr>
                     <tr>
-                        <td><NavLink to="/videoPage">7-dars videosi</NavLink></td>
-                        <td>7-dars</td>
+                        <td><NavLink to="/videoPage">3-dars videosi</NavLink></td>
+                        <td>3-dars</td>
                         <td>20 mart, 2024</td>
                         <td>423 mb</td>
                         <td className={styles.actions}>
@@ -49,8 +49,8 @@ function Lesson() {
                         </td>
                     </tr>
                     <tr>
-                        <td><NavLink to="/videoPage">7-dars videosi</NavLink></td>
-                        <td>7-dars</td>
+                        <td><NavLink to="/videoPage">4-dars videosi</NavLink></td>
+                        <td>4-dars</td>
                         <td>20 mart, 2024</td>
                         <td>423 mb</td>
                         <td className={styles.actions}>

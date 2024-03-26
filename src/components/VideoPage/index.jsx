@@ -5,7 +5,7 @@ import styles from "./index.module.css";
 function Video() {
     const [isHomework, setIsHomework] = useState(true);
     const [videoData, setVideoData] = useState(null);
-    // const [error, setError] = useState(null);
+    const [error, setError] = useState(null);
 
     function handleHomework() {
         setIsHomework(true);
@@ -15,17 +15,17 @@ function Video() {
         setIsHomework(false);
     }
 
-    useEffect(() => {
-        var requestOptions = {
-            method: 'GET',
-            redirect: 'follow'
-        };
+    // useEffect(() => {
+    //     var requestOptions = {
+    //         method: 'GET',
+    //         redirect: 'follow'
+    //     };
 
-        fetch("https://api.kinescope.io/v1/videos/5o1o7855WXEWDcETxN7CKc/posters", requestOptions)
-            .then(response => response.text())
-            .then(result => console.log(result))
-            .catch(error => console.log('error', error));
-    }, []);
+    //     fetch("https://api.kinescope.io/v1/videos?page=1&per_page=1&order=created_at.desc,title.asc", requestOptions)
+    //         .then(response => response.text())
+    //         .then(result => console.log(result))
+    //         .catch(error => console.log('error', error));
+    // }, []);
 
     return (
         <div className={styles.main}>
@@ -39,37 +39,30 @@ function Video() {
                     </NavLink>
                 </div>
                 <div className={styles.imageWrapper}>
-                    <div className={styles.videoImage}>
-                        <div style={{ position: "relative", paddingTop: "100%", width: "100%" }}>
-                            {error ? (
-                                <p>Error: {error}</p>
-                            ) : (
-                                <pre>{JSON.stringify(videoData, null, 2)}</pre>
-                            )}
-                        </div>
+                    <div className={styles.imageFrame}>
+                        <iframe
+                            src="https://kinescope.io/embed/anrBNqaBNZsyFvsmtLxQAN"
+                        ></iframe>
                     </div>
                     <div className={styles.homeworkRating}>
                         <nav className={styles.nav}>
                             <ul className={styles.navList}>
-                                <li>
-                                    <a onClick={handleHomework} href="/home">
-                                        Tasnif
-                                    </a>
+                                <li onClick={handleHomework} style={isHomework ? { borderBottom: "2px solid #929acc", color: "#929acc" } : { borderBottom: "none" }}>
+                                    Tasnif
                                 </li>
-                                <li>
-                                    <a onClick={handleRating} href="/homes">
-                                        Dars reytingi
-                                    </a>
+                                <li onClick={handleRating} style={isHomework ? { borderBottom: "none" } : { borderBottom: "2px solid #929acc", color: "#929acc" }}>
+                                    Dars reytingi
                                 </li>
                             </ul>
                         </nav>
+
                         {isHomework ? (
-                            <div className={styles.homework}>
+                            <div className={styles.homework} >
                                 <p>Bu yerda dars haqida tasnif</p>
                                 <br />
                             </div>
                         ) : (
-                            <div className={styles.rating}>
+                            <div className={styles.rating} >
                                 <p>Rating</p>
                                 <br />
                             </div>
@@ -79,12 +72,22 @@ function Video() {
             </div>
             <div className={styles.fixed}>
                 <div className={styles.lessonList}>
-                    {[...Array(8)].map((_, index) => (
-                        <div key={index} className={styles.lesson}>
-                            <p>1-dars</p>
-                            <h5>Dars sanasi: 23 Fev, 2024</h5>
-                        </div>
-                    ))}
+                    <div className={styles.lesson}>
+                        <p>1-dars</p>
+                        <h5>Dars sanasi: 23 Fev, 2024</h5>
+                    </div>
+                    <div className={styles.lesson}>
+                        <p>2-dars</p>
+                        <h5>Dars sanasi: 23 Fev, 2024</h5>
+                    </div>
+                    <div className={styles.lesson}>
+                        <p>3-dars</p>
+                        <h5>Dars sanasi: 23 Fev, 2024</h5>
+                    </div>
+                    <div className={styles.lesson}>
+                        <p>4-dars</p>
+                        <h5>Dars sanasi: 23 Fev, 2024</h5>
+                    </div>
                 </div>
             </div>
         </div>
