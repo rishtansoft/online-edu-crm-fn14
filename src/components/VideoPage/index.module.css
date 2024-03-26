@@ -1,0 +1,146 @@
+.main {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 28px 18px;
+}
+
+.video {
+  padding: 28px 18px;
+  overflow-y: auto;
+}
+
+/* .imageWrapper {
+  margin: 18px;
+} */
+
+.videoImage {
+  width: 800px;
+  height: 500px;
+  border-radius: 12px;
+  background-color: #c4c4c4;
+}
+
+.lessonNumber {
+  width: 620px;
+  height: 52px;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background-color: #eaedff;
+  color: #264653;
+  font-weight: 500;
+}
+
+.themeBack {
+  display: flex;
+  justify-content: space-between;
+}
+
+.backButton {
+  background-color: #e9c46a;
+  padding: 12px 16px;
+  height: 52px;
+  color: white;
+  border: none;
+  /* border: 1px solid #1737b0; */
+  border-radius: 12px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.homeworkRating {
+  margin-top: 24px;
+  background-color: #eaedff;
+  padding: 12px;
+  color: #264653;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.nav {
+  padding: 12px;
+  color: #264653;
+  border-bottom: 1px solid #b7c1ff;
+}
+
+.navList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navList li {
+  padding: 12px;
+  display: inline;
+  margin-left: 16px;
+}
+
+.navList li a {
+  text-decoration: none;
+  color: #264653;
+  font-weight: 500;
+  padding: 12px;
+}
+
+.navList li a:focus {
+  border-bottom: 2px solid #929acc;
+  color: #929acc;
+}
+
+.homework,
+.rating {
+  padding: 20px;
+}
+
+.homework p,
+.rating p {
+  margin-left: 20px;
+}
+
+.lessonList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 24px;
+  background-color: #f3f3f3;
+  border: 1px solid #268e81;
+  border-radius: 12px;
+  margin-top: 28px;
+}
+
+.lesson {
+  width: 240px;
+  height: 60px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 20px;
+  background-color: #2a9d8f;
+  cursor: pointer;
+}
+
+.lesson h5 {
+  font-weight: 400;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
