@@ -228,6 +228,7 @@ border: 1px solid #ECEFFF;
 .Fn{
   margin-right: 150px;
   color: #4B4B4B;
+  cursor: pointer;
 }
 
 .ID{
@@ -247,4 +248,5 @@ border: 1px solid #ECEFFF;
   margin-left: 6px;
   font-size: 16px;
   color: #4B4B4B;
+  cursor: pointer;
 }
