@@ -21,7 +21,8 @@
   color: #252525;
   font-weight: 800;
   font-size: 20px;
-  padding-left: 15px;
+  padding-left: 12px;
+  font-family: "Inter", sans-serif;
 }
 
 .Soxa {
@@ -29,6 +30,8 @@
   padding-left: 15px;
   padding-top: 2px;
   font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
 }
 
 .Soxa_icon {
@@ -105,41 +108,6 @@ h6 {
   border-bottom: 1px solid #F0F0F0;
   height: 50px;
 }
-.idd{
-  margin-top: 15px;
-  margin-right: 540px;
-  margin-left: 30px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-}
-
-.idd_3{
-  margin-top: 15px;
-  margin-right: 540px;
-  margin-left: 30px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-}
-
-.idd_4{
-  margin-top: 15px;
-  margin-right: 540px;
-  margin-left: 30px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-}
-
-.idd_6{
-  margin-top: 15px;
-  margin-right: 540px;
-  margin-left: 30px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-}
 
 .grup{
   margin-top: 15px;
@@ -211,4 +179,72 @@ h6 {
   display: flex;
   margin-top: 25px;
   margin-left: 35px;
+}
+.Container_grup{
+  width: 100%;
+  border-top: 1px solid #F0F0F0;
+  border-bottom: 1px solid #F0F0F0;
+}
+.grup{
+  margin-left: 60px;
+  margin-top: 15.5px;
+  margin-bottom: 15.5px;
+  font-size: 28px;
+  color: #252525;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.Container_card{
+width: 339.75px;
+height: 125px;
+background-color: #F9F8FA;
+border-radius: 8px;
+margin-top: 30px;
+margin-left: 40px;
+border: 1px solid #ECEFFF;
+}
+.Container_card:active{
+  background-color: #f0f0f0;
+}
+.Container_group_name{
+  font-family: "Inter" sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 15px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.Container_id{
+  margin-top: 35px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: start;
+}
+.Group{
+  padding-top: 15px;
+  
+}
+.Fn{
+  margin-right: 150px;
+  color: #4B4B4B;
+}
+
+.ID{
+  margin-top: 5px;
+  font-family: "Inter" sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  display: flex;
+}
+.number_people{
+  margin-top: 8px;
+}
+.people_number{
+  display: flex;
+}
+.number{
+  margin-left: 6px;
+  font-size: 16px;
+  color: #4B4B4B;
 }
