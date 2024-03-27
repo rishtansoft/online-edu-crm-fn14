@@ -6,17 +6,13 @@ import vim from '../img/Vim.svg'
 import showPwdImg from '../img/show.svg'
 import hidePwdImg from '../img/hide.svg'
 
-function login() {
+function Login() {
+    const [pwd, setPwd] = useState('');
+    const [isRevealPwd, setIsRevealPwd] = useState(false);
 
     function handleClick(e){
         e.preventDefault()
     }
-
-    
-
-
-    const [pwd, setPwd] = useState('');
-    const [isRevealPwd, setIsRevealPwd] = useState(false);
 
     return (
         <div className='container'>
@@ -58,4 +54,4 @@ function login() {
     )
 }
 
-export default login
+export default Login
