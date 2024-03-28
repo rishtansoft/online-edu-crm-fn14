@@ -1,0 +1,37 @@
+                {/* {newGroup && (
+                    <div className={styles.addGroupForm}>
+                        <input
+                            className={`${styles.groupAdd} ${errors.name && styles.errorInput}`}
+                            type="text"
+                            name="name"
+                            placeholder="Nomi"
+                            onChange={handleGroupInputChange}
+                        />
+                        {errors.name && <p className={styles.errorMessage}>{errors.name}</p>}
+                        <input
+                            className={`${styles.groupAdd} ${errors.lessonStartTime && styles.errorInput}`}
+                            type="time"
+                            name="lessonStartTime"
+                            placeholder="Boshlanish vaqti"
+                            onChange={handleGroupInputChange}
+                        />
+                        {errors.lessonStartTime && <p className={styles.errorMessage}>{errors.lessonStartTime}</p>}
+                        <input
+                            className={`${styles.groupAdd} ${errors.lessonEndTime && styles.errorInput}`}
+                            type="time"
+                            name="lessonEndTime"
+                            placeholder="Tugallanish vaqti"
+                            onChange={handleGroupInputChange}
+                        />
+                        {errors.lessonEndTime && <p className={styles.errorMessage}>{errors.lessonEndTime}</p>}
+                        <input
+                            className={`${styles.groupAdd} ${errors.direction && styles.errorInput}`}
+                            type="text"
+                            name="direction"
+                            placeholder="Yo'nalishi"
+                            onChange={handleGroupInputChange}
+                        />
+                        {errors.direction && <p className={styles.errorMessage}>{errors.direction}</p>}
+                        <button onClick={handleSaveNewGroup}>Saqlash</button>
+                    </div>
+                )} */}

@@ -82,12 +82,22 @@
   text-decoration: none;
 }
 
+.teacherPhone span {
+  display: flex;
+  gap: 8px;
+}
+
 .teacherInfo {
   box-sizing: border-box;
   border: 1px solid rgb(236, 239, 255);
   border-radius: 8px;
   background: rgb(249, 248, 250);
   padding: 20px;
+}
+
+.teacherStartDate span {
+  display: flex;
+  gap: 5px;
 }
 
 .teacherLittleInfo {
@@ -110,8 +120,6 @@
 }
 
 .allGroups {
-  justify-content: space-between;
-  align-items: center;
   text-align: center;
 }
 
@@ -125,17 +133,6 @@
   padding: 13px;
 }
 
-.group {
-  display: flex;
-  justify-content: space-between;
-  padding: 13px 20px;
-}
-
-.group span {
-  display: flex;
-  gap: 10px;
-}
-
 .groupAdd {
   padding: 10px 20px;
   outline: none;
@@ -144,7 +141,13 @@
   color: #000;
 }
 
-.groupId span {
+.tds {
+  width: 60%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.groupId {
   color: rgb(96, 122, 251);
 }
 
@@ -164,7 +167,7 @@
 
 /* group add */
 
-.studentAddBtn {
+.groupAddBtn {
   position: absolute;
   width: 76px;
   height: 76px;
@@ -175,6 +178,103 @@
   border-radius: 50px;
   font-size: 50px;
   box-shadow: 0px 0px 15px 0px rgba(96, 122, 251, 0.5);
-  right: 60px;
+  right: 0;
   bottom: 20px;
+}
+
+/* modal */
+
+.modalHeader {
+  background: rgb(96, 122, 251);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 8px 8px 0px 0px;
+  padding: 15px;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  z-index: 1000000;
+}
+
+.modalInputs input::placeholder {
+  color: rgb(191, 191, 191);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -2.5%;
+  text-align: left;
+}
+
+.modalHero span {
+  color: rgb(37, 37, 37);
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -2.5%;
+  text-align: left;
+}
+
+.closeBtn {
+  position: absolute;
+  font-size: 35px;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.modalTitle {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: -2.5%;
+  text-align: left;
+}
+
+.modalDesc {
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -2.5%;
+  text-align: left;
+}
+
+.modalInputs {
+  padding: 20px;
+  border-radius: 8px 8px 0px 0px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.groupSaveBtn {
+  color: #fff;
+  background: rgb(96, 122, 251);
+  padding: 16px 98px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+
+.groupDates {
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
 }
