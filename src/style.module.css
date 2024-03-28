@@ -1,33 +1,73 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap);
+
 .container {
     margin: 100px auto;
     width: 80%;
+
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-family: 500
 }
 
 .table {
     border-collapse: collapse;
     width: 100%;
     overflow-x: auto;
+    font-family: 'Inter';
+    border: 1px solid #F0F0F0;
+
+}
+
+thead {
+    background-color: #F9F8FA;
+    border: 1px solid #F0F0F0;
+    font-size: 14px;
+    color: #4B4B4B;
+    font-weight: lighter;
+    font-family: 'Inter';
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    border-color: #F0F0F0;
+    border-bottom: 1px solid #F0F0F0;
+    text-align: left;
 }
 
 td a {
     text-decoration: none;
-    color: #000;
+    color: #252525;
+    font-size: 16px;
 }
 
 td a:hover {
     text-decoration: underline;
+    color: blue;
 }
 
 .row {
-    background-color: #f2f2f2;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-color: #F0F0F0;
+
 }
 
 .cell {
-    border: 1px solid #ddd;
     padding: 8px;
+
 }
 
-
+.actions {
+    cursor: pointer;
+    }
 
 .addButton {
     margin-top: 10px;
@@ -98,4 +138,61 @@ td a:hover {
     cursor: pointer;
     background-color: #45a049;
     color: #f2f2f2;
+}
+
+.modalAction {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.closeAction {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeAction:hover,
+.closeAction:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalActionContent {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    margin: 20% auto;
+    width: 12%;
+    border-radius: 8px;
+}
+
+.modalActionForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.deleteAction, .editAction{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.deleteAction, .editAction span{
+    cursor: pointer;
+}
+.delete{
+    color:#F51C1C;
+}
+.edit{
+    color: #264653;
 }
