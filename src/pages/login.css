@@ -2,8 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-family:  sans-serif;
+
+}
+
+label{
+    display: inline-block;
+    width: 100px;margin-bottom: 10px;
 }
 
 .container {
@@ -11,11 +16,9 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding-top: 20px;
+    height: 100vh;
 }
 .container .form {
-    font-family: "Inter", sans-serif;
-    width: 400px;
     align-items: center;
     position: relative;
     margin: 0 auto;
@@ -24,76 +27,86 @@
     margin-left: 100px;
 }
 .container .form img {
-    margin-bottom: 50px;
-    width: 125.25px;
-    height: 45px;
-    top: 100px;
     margin-left: 130px;
-    gap: 0px;
-    opacity: 0px;
+    height: 6vh;
+    margin-bottom: 30px;
 }
 
 .container .form input {
-    width: 420px;
-    height: 38px;
-    border-radius: 8px;
-    border: 1px solid #000;
-    opacity: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #000000;
-    margin-right: 100px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.container .form input span {
-    font-family: "Inter";
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 21.78px;
-    text-align: left;
-    color: #252525;
-}
-
-.container .form h1 {
-    font-family: "Inter";
-    font-size: 57px;
-    font-weight: 700;
-    line-height: 72.61px;
-    text-align: left;
-    color: #252525;
-    margin-left: 35px;
-    margin-bottom: -10px;
-}
-
-.container .form h4 {
-    margin-left: 15px;
-    font-family: "Inter";
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 24.2px;
-    text-align: left;
-    color: #4b4b4b;
-    margin-bottom: 40px;
-}
-
-.container .form h6 {
-    margin-top: 100px;
-    margin-left: 100px;
-    color: #aeaeae;
-    font-family: "SF Pro Display";
+    font-family: 'SF Pro Display';
     font-size: 18px;
     font-weight: 500;
     line-height: 21.48px;
     text-align: left;
+    width: 440px;
+    height: 5vh;
+    margin-bottom: 18px;
+    border-radius: 3px;
+    padding: 5px 30px 5px 10px;
+    font-size: 20px;
+
+}
+
+.container .form input:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+.container .form label span {
+    font-family: 'SF Pro Display';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.48px;
+    width: 39px;
+    height: 21px;
+    margin-bottom: 20px;
+
+
+
+}
+
+.container .form h1 {
+    font-family: 'SF Pro Display';
+    text-align: center;
+    margin-left: 40px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 71.6px;
+    text-align: left;
+    margin-bottom: 20px;
+    
+}
+
+.container .form h4 {
+    font-family: 'SF Pro Display';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.87px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-bottom: 40px;
+    
+}
+
+.container .form h6 {
+    width: 281px;
+    height: 21px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    margin-left: 60px;
+    left: 285.5px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'SF Pro Display';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.48px;
+    text-align: center;
+    color: #AEAEAE;
+
+
+    
 }
 .btn {
     width: 444px;
@@ -103,7 +116,7 @@
     gap: 0px;
     border-radius: 8px;
     opacity: 0px;
-    background-color: #2e4de8;
+    background: #607AFB;
     color: #fff;
     cursor: pointer;
 }
@@ -111,6 +124,21 @@
 .container .form button:hover {
     opacity: 1;
     background-color: #1236e8;
+}
+
+.container .form button span{
+    font-family: 'SF Pro Display';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.48px;
+    text-align: left;
+    width: 44px;
+    height: 21px;
+    top: 689.5px;
+    left: 404.5px;
+    gap: 0px;
+    opacity: 0px;
+
 }
 .container .action img {
     width: 800px;
@@ -127,13 +155,25 @@
 }
 
 .pwd-container input {
+    border: 2px solid #000000;
     padding: 5px 30px 5px 10px;
     font-size: 20px;
+}
+
+.pwd-container input:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .pwd-container img {
     cursor: pointer;
     position: absolute;
-    margin-top: -92px;
-    left: 200px;
+    width: 23px;
+    margin-top: -59px;
+    left: 278px;
+   
 }
+
+.container .action img{
+    height: 90vh;
+}
+

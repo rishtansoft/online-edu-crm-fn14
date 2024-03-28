@@ -2,9 +2,9 @@ import React from 'react'
 import { useState } from 'react'
 import './login.css'
 import actionImg from '../img/action.svg'
-import vim from '../img/Vim.svg'
 import showPwdImg from '../img/show.svg'
 import hidePwdImg from '../img/hide.svg'
+import vim from '../img/Vim.svg'
 
 function login() {
 
@@ -21,7 +21,7 @@ function login() {
     return (
         <div className='container'>
             <div className="form">
-                <img src={vim} alt="VIM" />
+                <img src={vim} alt="Vim" />
                 <h1>Xush kelibsiz!</h1>
                 <h4>Login parolingizni kiritib o'z kabinetingizga kiring.</h4>
                 <form >
@@ -31,7 +31,7 @@ function login() {
                     <div className="pwd-container">
                         <input
                             name="pwd"
-                            placeholder="Enter Password"
+                            placeholder="Parolingizni kiriting"
                             type={isRevealPwd ? 'text' : 'password'}
                             value={pwd}
                             onChange={(e) => setPwd(e.target.value)}
@@ -46,7 +46,7 @@ function login() {
 
 
 
-                    <button onClick = {handleClick} className='btn'>Kirish</button>
+                    <button onClick = {handleClick} className='btn'><span>Kirish</span></button>
 
                     <h6>Copyright ©  2024 Vim kompaniyasi</h6>
                 </form>
