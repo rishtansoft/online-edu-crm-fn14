@@ -147,6 +147,7 @@ function App() {
 
 </table>
 
+
 <nav aria-label="Page navigation example">
   <ul class="pagination">
     <li class="page-item">
@@ -166,11 +167,7 @@ function App() {
 </nav>
 
 
-<div className="btn-grup">
-  <button className='btn1'>To‘lov qilganlar -100</button>
-  <button className='btn2' >To‘lov qilmaganlar -15</button>
-  <button className='btn3' >Qarzdorlar -100</button>
-</div>
+
 
     </>
   )

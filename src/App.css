@@ -163,6 +163,7 @@ hr {
     background: #F4A261;
     border: none;
     cursor: pointer;
+    color: white;
 }
 
 .button-grup .Export {
@@ -177,6 +178,7 @@ hr {
     background: #607AFB;
     border: none;
     cursor: pointer;
+    color: white;
 }
 
 .tolov {
@@ -197,6 +199,7 @@ hr {
     text-align: left;
     color: white;
     border: none;
+    padding-left: 30px;
 }
 
 .table {
