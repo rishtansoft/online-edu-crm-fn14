@@ -8,6 +8,7 @@ export default function GroupInfoPage() {
   const [isModal, setIsModal] = useState(false);
   const [isModalAction, setIsModalAction] = useState(false);
   const [isIndex, setIsIndex] = useState(null);
+  
 
   const nameRef = useRef("");
   const fieldRef = useRef("");
