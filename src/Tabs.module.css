@@ -4,25 +4,23 @@
   margin: 0 auto;
 }
 
-table,
-td,
-th {
-  border-bottom: 1px solid lightgray;
-  border-collapse: collapse;
-  padding: 15px 10px;
-  text-align: center;
-}
-
-.rounded-table {
-  width: 100%;
-  border-collapse: collapse;
-  overflow: hidden;
+.rounded-table { 
   border: 1px solid lightgray;
-  cursor: pointer;
+  width: 100%;
+  border-top-left-radius: 8px;
+  text-align: center;
+  border-top-right-radius: 8px;
+   cursor: pointer;
+  }
+.rounded-table td,th{
+  border-bottom: 1px solid lightgray;
+  padding: 15px 10px; 
 }
-.thead {
-  background-color: #f9f8fa;
-  color: #4b4b4b;
+.rounded-table tr:last-child > td {
+  border-bottom: none;
+}
+.thead{
+  background-color:#f9f9f9;
 }
 
 .student-title {
@@ -43,6 +41,7 @@ th {
   margin-top: 40px;
   padding-bottom: 15px;
   margin-bottom: 20px;
+  border-radius: 0px;
 }
 
 .tab-buttons button.active {
@@ -61,29 +60,41 @@ th {
 }
 
 .active {
+  width: 100px;
   background-color: #55ce63;
   color: #f9f8fa;
+  padding: 10px 20px;
   font-weight: 500;
   border-radius: 8px;
-  width: 100px;
 }
 
 .inactive {
+  width: 100px;
   background-color: rgba(255, 0, 0, 0.512);
   color: white;
   font-weight: 500;
+  padding: 10px 15px;
   border-radius: 8px;
 }
 
-.lesson-charts {
+
+.lesson-charts { 
   border: 1px solid lightgray;
   width: 100%;
   text-align: center;
-  color: #4b4b4b;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+   cursor: pointer;
+  }
+.lesson-charts td,th{
+  border-bottom: 1px solid lightgray;
+  padding: 15px 10px; 
 }
-
-.lesson-charts .lesson-thead {
-  background-color: #f9f8fa;
+.lesson-charts tr:last-child > td {
+  border-bottom: none;
+}
+ .lesson-thead {
+  background-color: #f9f9f9;
 }
 
 .lesson-title {
@@ -121,3 +132,5 @@ th {
 .lesson-link a:hover {
   color: #f716a8;
 }
+
+

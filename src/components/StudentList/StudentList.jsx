@@ -27,12 +27,10 @@ const StudentsList = ({ info, handleClick }) => {
                 <td>{item.name}</td>
                 <td>{item.surname}</td>
                 <td>{item.phone}</td>
-                <td
-                  className={
+                <td>
+                  <span className={
                     item.status === "active" ? Style.active : Style.inactive
-                  }
-                >
-                  {item.status}
+                  }>{item.status}</span>
                 </td>
               </tr>
             ))}
