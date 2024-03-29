@@ -10,7 +10,6 @@
     justify-content: center;
     flex-direction: column;
     transition: all 0.3s ease;
-    display: none;
 }
 
 .add_employee_header{
@@ -20,6 +19,26 @@
     border-top-right-radius: 8px;
     padding: 20px 40px;
     color: #fff;
+}
+
+.add_employee_actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add_employee_closeBtn{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.add_employee_closeBtn:hover{
+    background-color: #5069F9;
 }
 
 .add_employee_title{
@@ -65,10 +84,6 @@
    transition: all 0.4s ease;
 }
 
-.addBtn{
-    display: flex;
-    justify-content: end;
-}
 
 .btn{
     color: #fff;
@@ -81,6 +96,8 @@
     margin-top: 40px;
     cursor: pointer;
     transition: all 0.2s ease;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 
 .btn:hover{
