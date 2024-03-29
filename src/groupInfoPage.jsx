@@ -52,7 +52,7 @@ export default function GroupInfoPage() {
     const startingDateRef = beginningDateRef.current.value;
     const endingDateRef = finishingDateRef.current.value;
 
-    if (validation()) {
+    if (!validation()) {
       alert("Fill all fields");
     } else {
       const newRow = {
