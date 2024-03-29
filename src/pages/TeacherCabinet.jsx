@@ -14,6 +14,7 @@ function TeacherCabinet() {
             name: 'Frontend ReactJS (Standard)',
             lessonStartTime: '8:00',
             lessonEndTime: '10:00',
+            lessonDate: 'Du-Chor-Juma',
             direction: 'Dasturlash',
         }
     ]);
@@ -110,7 +111,7 @@ function TeacherCabinet() {
             <div className={styles.teacherGroup}>
                 <h1 className={styles.rolesInfoStudents}>Guruhlar</h1>
                 <table className={styles.allGroups}>
-                    <thead>
+                    <thead className={styles.thead}>
                         <tr className={styles.group}>
                             <th className={styles.ths}>ID</th>
                             <th className={styles.ths}>Nomi</th>
@@ -125,6 +126,7 @@ function TeacherCabinet() {
                                 <td className={styles.groupId}>{group.id}</td>
                                 <td className={styles.tds}>{group.name}</td>
                                 <td className={styles.tds}>{group.lessonStartTime} - {group.lessonEndTime}</td>
+                                <td className={styles.tds}>{group.date}</td>
                                 <td className={styles.tds}>{group.direction}</td>
                             </tr>
                         ))}
@@ -156,8 +158,8 @@ function TeacherCabinet() {
                                 <div className={styles.groupTimeEnd}>
                                     <span>Dars kunlari</span>
                                     <select className={styles.groupDates}>
-                                        <option value="Dushanba-Seshanba">Dushanba-Seshanba</option>
-                                        <option value="Chorshanba-Payshanba">Chorshanba-Payshanba</option>
+                                        <option value="Du-Se">Du-Se</option>
+                                        <option value="Chor-Pay">Chor-Pay</option>
                                         <option value="Juma-Shanba">Juma-Shanba</option>
                                     </select>
                                     {errors.lessonEndTime && <span className={styles.errorMessage}>{errors.lessonEndTime}</span>}

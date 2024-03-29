@@ -115,6 +115,10 @@
 
 /* group */
 
+.group {
+  width: 100%;
+}
+
 .teacherGroup {
   padding: 20px;
 }
@@ -139,6 +143,9 @@
   border: none;
   border-radius: 10px;
   color: #000;
+}
+
+.thead {
 }
 
 .tds {
